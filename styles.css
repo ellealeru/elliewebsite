@@ -12,8 +12,8 @@
 
 /* Ensure images fit within their columns and are consistent in size */
 .column img {
-  width: 100%; /* Make images responsive to column width */
-  max-width: 100%; /* Prevent images from exceeding their column's width */
+  width: 200px; /* Make images responsive to column width */
+  max-width: 200px /* Prevent images from exceeding their column's width */
   height: auto; /* Maintain aspect ratio */
   margin-top: 8px;
   object-fit: cover; /* Ensures images cover their allocated space without distortion */
