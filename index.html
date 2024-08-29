@@ -5,7 +5,16 @@
        <title>website</title>
        <meta charset="UTF-8">
    </head>
-  
+   <style>
+        ul {
+            list-style-type: disc; /* Default bullets */
+            margin-left: 20px; /* Indentation for nested lists */
+        }
+        ul ul {
+            list-style-type: circle; /* Sub-bullets */
+        }
+    </style>
+   
    <body>
        <h1>hello</h1>
 
@@ -13,9 +22,36 @@
         welcome to ellie website. you can tell it's a work-in-progress because it is ugly. i hope the images i scattered throughout the page will make up for that.
         </p>
 
-      <h1>about me</h1>
-      <p style = "font-family:georgia,garamond,serif;font-size:16px;">
+      <h1 style = "font-size:12px;" >about me</h1>
+      <p style = "font-family:georgia,garamond,serif;font-size:10px;">
          here are some things about me:
+         <ul>
+            <li>
+               i like to write satire. for four glorious years i was involved in the husky husky, northeastern's student
+               run satire paper. i have a unique perspective on all matters and am probably the most qualified person on
+               earth to write news. 
+               <ul>
+                  <li>read some stuff
+                     <a href="writing.html" target="_blank">here</a>
+                  </li>
+               </ul>
+             <li>
+               i also wrote a not-so-funny, deeply personal piece for spectrum, a northeastern-run creative writing magazine.
+               <ul>
+                  <li>read that
+                     <a href="https://drive.google.com/file/d/1ULE6ecgKF4swSzA-eoln4Arw0_xjX-gX/view?usp=sharing" target="_blank">here</a>
+                  </li>
+               </ul>
+             </li>
+             <li>
+               i also like to draw!
+               <ul>
+                  <li><a href="https://www.anotherexample.com" target="_blank">my art account</a></li>
+                  <li><a href="commissions.html" target="_blank"> commissioned work gallery</a> </li>
+               </ul>
+               </li>
+         </ul>
+            
       </p>
     
        <img alt="pog" src="ellie.png">
