@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, garamond, serif;
+    font-family: Arial, sans-serif;
 }
 
 .image-column {
@@ -12,12 +12,13 @@ body {
 
 .image-item {
     text-align: center; /* Center text (captions) below images */
+    width: 400px; /* Set fixed width for the image item */
 }
 
 .image-item img {
     display: block;
-    width: 200px; /* Set fixed width */
-    height: 200px; /* Set fixed height */
+    width: 400px; /* Set fixed width */
+    height: 400px; /* Set fixed height */
     object-fit: cover; /* Maintain aspect ratio while covering the area */
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -36,5 +37,14 @@ body {
 
     .caption {
         font-size: 12px; /* Smaller font size for captions on small screens */
+    }
+
+    .image-item {
+        width: 300px; /* Adjust width for smaller screens if needed */
+    }
+
+    .image-item img {
+        width: 300px; /* Adjust image size for smaller screens if needed */
+        height: 300px; /* Adjust image size for smaller screens if needed */
     }
 }
