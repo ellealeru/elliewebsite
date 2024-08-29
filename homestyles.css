@@ -1,0 +1,65 @@
+/* General Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between images */
+}
+
+.image-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-link {
+    display: inline-block;
+}
+
+.image {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd; /* Optional border for better visibility */
+    border-radius: 8px; /* Optional rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05); /* Slightly zooms image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+.image-description {
+    margin-top: 0.5rem;
+    font-size: 0.875rem; /* Smaller font size for description */
+    color: #666; /* Optional color for the description */
+}
