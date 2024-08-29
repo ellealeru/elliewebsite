@@ -21,7 +21,6 @@ body {
     overflow: hidden; /* Ensure the image does not overflow the figure */
     width: 200px; /* Adjust size as needed */
     height: 200px; /* Adjust size as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
 }
 
 /* Image styling */
@@ -38,7 +37,6 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
     text-align: center;
     padding: 5px;
