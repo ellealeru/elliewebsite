@@ -63,3 +63,15 @@ body {
     font-size: 0.875rem; /* Smaller font size for description */
     color: #666; /* Optional color for the description */
 }
+
+/* Specific styles for social media icons */
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Adjust space between icons as needed */
+}
+
+.social-icons-container .image {
+    width: 100px; /* Smaller size for social media icons */
+    height: auto; /* Maintain aspect ratio */
+}
