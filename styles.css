@@ -16,8 +16,9 @@ body {
 
 .image-item img {
     display: block;
-    max-width: 100%; /* Responsive image size */
-    height: auto; /* Maintain aspect ratio */
+    width: 400px; /* Set fixed width */
+    height: 400px; /* Set fixed height */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
     border: 1px solid #ddd;
     border-radius: 5px;
 }
