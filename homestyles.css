@@ -25,13 +25,14 @@ body {
 
 .subtitle {
     font-size: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .image-container {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Space between images */
+    gap: 1rem; /* Space between images */
 }
 
 .image-figure {
@@ -68,10 +69,10 @@ body {
 .social-icons-container {
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Adjust space between icons as needed */
+    gap: 1rem; /* Adjust space between icons as needed */
 }
 
 .social-icons-container .image {
-    width: 100px; /* Smaller size for social media icons */
+    width: 80px; /* Smaller size for social media icons */
     height: auto; /* Maintain aspect ratio */
 }
