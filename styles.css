@@ -1,43 +1,40 @@
-/* Basic reset for body margins and padding */
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Gallery container styling */
-.gallery {
+.image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 10px; /* Spacing between items */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
     padding: 10px;
 }
 
-/* Gallery item styling */
-.gallery-item {
-    position: relative;
-    overflow: hidden; /* Ensure the image does not overflow the item */
-    border-radius: 8px; /* Optional: rounded corners */
-}
-
-/* Image styling */
-.gallery-item img {
-    width: 100%;
-    height: auto;
+.image-item {
     display: block;
-    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-/* Caption styling */
-.gallery-item figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.image-item img {
+    display: block;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
-    text-align: center;
-    padding: 5px;
-    box-sizing: border-box; /* Includes padding in the total width/height */
-    font-size: 0.9em; /* Slightly smaller text for captions */
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container without distortion */
+}
+
+.image-item {
+    width: 150px; /* Thumbnail width */
+    height: 150px; /* Thumbnail height */
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .image-item {
+        width: 100px;
+        height: 100px;
+    }
 }
