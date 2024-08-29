@@ -32,7 +32,7 @@ body {
 .image-container {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Space between images */
+    gap: 0.5rem; /* Space between images */
 }
 
 .image-figure {
@@ -47,7 +47,7 @@ body {
 }
 
 .image {
-    width: 150px; /* Adjust size as needed */
+    width: 200px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     border: 2px solid #ddd; /* Optional border for better visibility */
     border-radius: 8px; /* Optional rounded corners */
