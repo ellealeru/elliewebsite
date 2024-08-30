@@ -14,6 +14,13 @@ body {
     background-color: #f4f4f4;
 }
 
+.subtitle {
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 /* Flex container for the image grid */
 .flex-container {
     display: flex;
