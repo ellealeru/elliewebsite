@@ -43,6 +43,10 @@ body {
   background-color: #4EBE7E;
 }
 
+.container:hover .overlay {
+  opacity: 1;
+}
+
 .overlaytext {
   color: white;
   font-size: 20px;
