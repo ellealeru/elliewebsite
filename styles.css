@@ -20,7 +20,7 @@ body {
     flex-wrap: wrap;
     justify-content: center; /* Center items horizontally */
     gap: 10px; /* Adjust the gap between images */
-    max-width: 90%; /* Control the maximum width of the grid */
+    max-width: 100%; /* Control the maximum width of the grid */
     margin: 0 auto; /* Center the container within its parent */
 }
 
@@ -36,8 +36,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 200px;
   opacity: 0;
   transition: .5s ease;
   background-color: #4EBE7E;
