@@ -30,7 +30,7 @@ body {
     flex-wrap: wrap;
     justify-content: center; /* Center items horizontally */
     gap: 10px; /* Adjust the gap between images */
-    max-width: 100%; /* Control the maximum width of the grid */
+    max-width: 80%; /* Control the maximum width of the grid */
     margin: 0 auto; /* Center the container within its parent */
 }
 
