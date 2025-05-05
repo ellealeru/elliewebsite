@@ -29,6 +29,15 @@ body {
     margin-bottom: 2rem;
 }
 
+.small-subtitle {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
