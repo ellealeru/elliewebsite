@@ -5,30 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="container">
-        <h2 class="subtitle">Click each drawing to learn more about it</h2>
-        <div class="flex-container" id="gallery">
-            <!-- Images will be inserted here by JavaScript -->
+        <h2 class="subtitle">Hover over each drawing to learn more about it</h2>
+        <div class="flex-container">
+            <div class="image-card">
+                <img src="drawings/college.jpg" alt="College drawing">
+                <div class="hover-content">
+                    <h3>College</h3>
+                    <p>A detailed sketch of a college campus with beautiful architecture</p>
+                    <button class="view-full" onclick="showLightbox('drawings/college.jpg', 'College Campus', 'A detailed architectural drawing of a college campus showcasing the main buildings and surroundings.')">View Full</button>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="drawings/fish.jpeg" alt="Fish drawing">
+                <div class="hover-content">
+                    <h3>Fish</h3>
+                    <p>Colorful fish illustration with detailed patterns</p>
+                    <button class="view-full" onclick="showLightbox('drawings/fish.jpeg', 'Colorful Fish', 'A vibrant illustration of a fish with intricate scale patterns and flowing fins.')">View Full</button>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="drawings/groupphoto.PNG" alt="Group photo drawing">
+                <div class="hover-content">
+                    <h3>Group Photo</h3>
+                    <p>A drawing of a group portrait with unique characters</p>
+                    <button class="view-full" onclick="showLightbox('drawings/groupphoto.PNG', 'Group Portrait', 'A detailed group portrait drawing featuring multiple figures with distinct personalities.')">View Full</button>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="drawings/jellyfish.jpeg" alt="Jellyfish drawing">
+                <div class="hover-content">
+                    <h3>Jellyfish</h3>
+                    <p>Ethereal jellyfish with translucent details</p>
+                    <button class="view-full" onclick="showLightbox('drawings/jellyfish.jpeg', 'Jellyfish', 'An ethereal drawing of a jellyfish with delicate, translucent tentacles floating in blue waters.')">View Full</button>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="drawings/julia.jpg" alt="Julia portrait">
+                <div class="hover-content">
+                    <h3>Julia</h3>
+                    <p>Portrait with expressive details</p>
+                    <button class="view-full" onclick="showLightbox('drawings/julia.jpg', 'Portrait of Julia', 'An expressive portrait drawing capturing the essence and personality of Julia.')">View Full</button>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="drawings/underwater.jpg" alt="Underwater scene">
+                <div class="hover-content">
+                    <h3>Underwater</h3>
+                    <p>Marine scene with diverse aquatic elements</p>
+                    <button class="view-full" onclick="showLightbox('drawings/underwater.jpg', 'Underwater Scene', 'A rich underwater scene depicting various marine life and plant elements in an aquatic ecosystem.')">View Full</button>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="drawings/hills.jpeg" alt="Hills landscape">
+                <div class="hover-content">
+                    <h3>Hills</h3>
+                    <p>Serene landscape with rolling hills</p>
+                    <button class="view-full" onclick="showLightbox('drawings/hills.jpeg', 'Rolling Hills', 'A serene landscape drawing of rolling hills with subtle shading creating depth and atmosphere.')">View Full</button>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="drawings/image0.jpg" alt="Original artwork">
+                <div class="hover-content">
+                    <h3>Original Artwork</h3>
+                    <p>Creative composition with unique style</p>
+                    <button class="view-full" onclick="showLightbox('drawings/image0.jpg', 'Original Artwork', 'A unique artistic creation showcasing original composition and creative technique.')">View Full</button>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Modal -->
-    <div class="modal" id="imageModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Artwork Details</h3>
-                <button class="close-button" id="closeModal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <img src="" alt="Full size image" class="modal-image" id="modalImage">
-                <p class="modal-description" id="modalDescription"></p>
+    
+    <!-- Lightbox for full image view -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-lightbox" onclick="closeLightbox()">×</button>
+            <img src="" alt="Full size image" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-caption" id="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    
+    <script>
+        // Simple lightbox functionality
+        function showLightbox(imageSrc, title, description) {
+            document.getElementById('lightbox-image').src = imageSrc;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-description').innerText = description;
+            document.getElementById('lightbox').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+        
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+        
+        // Close lightbox with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
