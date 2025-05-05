@@ -1,0 +1,131 @@
+body {
+    font-family: Georgia, garamond, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.writing-list {
+    margin: 30px 0;
+}
+
+.writing-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.writing-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.writing-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.writing-link:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.writing-title {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.writing-icon {
+    font-size: 1.2rem;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.writing-link:hover .writing-icon {
+    transform: translateX(5px);
+    color: #000;
+}
+
+.back-button-container {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.back-button-container.top {
+    margin-bottom: 40px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.back-button:hover {
+    background-color: #e9e9e9;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+    color: #000;
+    border-bottom: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .writing-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .writing-icon {
+        align-self: flex-end;
+    }
+}
