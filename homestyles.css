@@ -57,7 +57,7 @@ body {
 .about-content {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     text-align: left;
 }
 .about-image {
