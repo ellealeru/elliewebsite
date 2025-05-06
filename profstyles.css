@@ -3,67 +3,59 @@ body, h1, h2, p {
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: Georgia, sans-serif;
+    font-family: Verdana;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #389469;
+    background-color: #004346; /* Dark teal from your palette */
     padding: 20px;
 }
-
 .container {
     text-align: center;
     width: 100%;
     max-width: 900px;
-    background-color: white;
+    background-color: #F7F7FF; /* Light background from your palette */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-top: 4px solid #1e6947; /* Green accent */
+    border-top: 4px solid #00C49A; /* Bright teal accent */
     position: relative;
     overflow: hidden;
 }
-
 .title {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: #218997; /* Dark blue-gray */
+    color: #172A3A; /* Dark blue-gray */
 }
-
 .subtitle {
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: #34495e; /* Darker blue-gray */
+    color: #172A3A; /* Darker blue-gray */
 }
-
 .small-subtitle {
     font-size: 1.5rem;
-    color: #3498db; /* Medium blue */
+    color: #004346; /* Dark teal */
     margin-top: 10px;
     margin-bottom: 25px;
     text-align: center;
     font-style: italic;
 }
-
 /* Back button */
 .back-button-container {
     text-align: left;
     margin-bottom: 30px;
 }
-
 .back-button-container.top {
     margin-bottom: 40px;
 }
-
 .back-button {
     display: inline-block;
     padding: 10px 18px;
-    background-color: rgba(46, 204, 113, 0.2);
-    color: #1e6947;
+    background-color: rgba(0, 196, 154, 0.2); /* Light teal background */
+    color: #00C49A; /* Bright teal */
     text-decoration: none;
     border: none;
     border-radius: 30px;
@@ -72,38 +64,32 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
-
-
 .experience-list {
     list-style-type: none;
     padding: 0;
     text-align: left;
 }
-
 .experience-item {
     margin-bottom: 35px;
     padding: 25px;
     border-radius: 5px;
-    background: #eef8ff;
+    background: rgba(0, 196, 154, 0.1); /* Light teal background */
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border-left: 5px solid #3498db;
+    border-left: 5px solid #00C49A; /* Bright teal */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .experience-item:last-child {
     margin-bottom: 0;
 }
-
 .experience-item h3 {
     margin-top: 0;
     margin-bottom: 15px;
-    color: #218997;
+    color: #172A3A; /* Dark blue-gray */
     font-weight: 600;
     font-size: 1.4rem;
     position: relative;
     display: inline-block;
 }
-
 .experience-item h3::after {
     content: "";
     position: absolute;
@@ -111,78 +97,67 @@ body {
     left: 0;
     width: 40px;
     height: 3px;
-    background: #3498db;
+    background: #00C49A; /* Bright teal */
     border-radius: 3px;
 }
-
 .experience-item p {
     margin-bottom: 15px;
     line-height: 1.6;
 }
-
 .experience-item p:last-child {
     margin-bottom: 0;
 }
-
 .experience-item ul {
     margin: 15px 0;
     padding-left: 20px;
 }
-
 .experience-item ul li {
     margin-bottom: 8px;
     position: relative;
 }
-
 .experience-item ul li::before {
     content: "•";
-    color: #3498db;
+    color: #00C49A; /* Bright teal */
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
-
 figure {
     margin: 25px auto;
     text-align: center;
     max-width: 350px;
 }
-
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    border: 5px solid #3498db;
+    border: 5px solid #00C49A; /* Bright teal */
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
-
-
 figcaption {
     margin-top: 12px;
     font-style: italic;
-    color: #7fb3d5; /* Lighter blue */
+    color: #004346; /* Dark teal */
     font-size: 0.95rem;
 }
-
 a {
-    color: #1e6947;
+    color: #00C49A; /* Bright teal */
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 500;
 }
-
 /* Media Queries */
 @media (max-width: 768px) {
     .container {
         padding: 30px 20px;
     }
-    
+   
     .title {
         font-size: 2.2rem;
     }
-    
+   
     .experience-item {
         padding: 20px;
     }
