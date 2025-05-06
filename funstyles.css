@@ -53,17 +53,13 @@ body {
 .interest-item {
     margin-bottom: 35px;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 5px;
     background: #eef8ff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     border-left: 5px solid #3498db;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.interest-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
 
 .interest-item:last-child {
     margin-bottom: 0;
@@ -119,11 +115,6 @@ img {
     transition: transform 0.3s ease;
 }
 
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4); /* Green shadow on hover */
-}
-
 figcaption {
     margin-top: 12px;
     font-style: italic;
@@ -138,9 +129,6 @@ a {
     font-weight: 500;
 }
 
-a:hover {
-    color: #2ecc71;
-}
 
 .back-button-container {
     text-align: left;
