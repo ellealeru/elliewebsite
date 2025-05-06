@@ -23,7 +23,7 @@ body {
     border-top: 4px solid #1e6947; /* Vue.js green as accent */
 }
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     color: #218997; /* Dark blue-gray */
 }
@@ -34,7 +34,7 @@ body {
     color: #34495e; /* Darker blue-gray */
 }
 .small-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: #3498db; /* Medium blue */
     margin-top: 10px;
     margin-bottom: 5px;
@@ -42,7 +42,7 @@ body {
     font-style: italic;
 }
 .smaller-subtitle {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #7fb3d5; /* Lighter blue */
     margin-top: 0;
     margin-bottom: 30px;
@@ -107,7 +107,7 @@ body {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-left: 5px solid #3498db; /* Blue border */
+    border: 5px solid #3498db; 
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -118,7 +118,7 @@ body {
 .image-description {
     margin-top: 0.5rem;
     font-size: 0.875rem;
-    color: #0e0c99; /* Teal green */
+    color: #039b5e; 
 }
 .social-icons-container {
     display: flex;
