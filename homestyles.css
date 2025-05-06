@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #e8f5fd; /* Light blue background */
+    background-color: #389469; 
     padding: 20px;
 }
 .container {
@@ -20,12 +20,12 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-top: 4px solid #42b883; /* Vue.js green as accent */
+    border-top: 4px solid #1e6947; /* Vue.js green as accent */
 }
 .title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #2c3e50; /* Dark blue-gray */
+    color: #218997; /* Dark blue-gray */
 }
 .subtitle {
     font-size: 1.5rem;
@@ -52,7 +52,7 @@ body {
 .about-section {
     margin: 30px 0;
     padding: 25px 25px 35px 25px; /* Increased bottom padding */
-    background: linear-gradient(135deg, #EDF6F9 0%, #FFDDD2 100%);
+    background: #eef8ff;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     text-align: center;
@@ -66,7 +66,7 @@ body {
     line-height: 1.6;
     font-size: 1.05rem;
     padding: 10px 15px 15px 15px; /* Added padding all around the text */
-    margin-bottom: 10px; /* Added bottom margin */
+    margin-bottom: 10px; 
 }
 .about-content {
     display: flex;
@@ -76,6 +76,13 @@ body {
 }
 .about-image {
     flex: 0 0 150px;
+}
+
+.about-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #34495e; /* Darker blue-gray */
 }
 .profile-image {
     width: 150px;
