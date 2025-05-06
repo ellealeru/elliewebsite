@@ -107,7 +107,7 @@ body {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 5px solid #3498db; 
+    border: 2px solid #eef8ff; 
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
