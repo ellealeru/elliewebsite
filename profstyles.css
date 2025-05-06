@@ -170,10 +170,6 @@ img {
     transition: transform 0.3s ease;
 }
 
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4); /* Green shadow on hover */
-}
 
 figcaption {
     margin-top: 12px;

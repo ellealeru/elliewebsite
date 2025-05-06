@@ -165,12 +165,6 @@ a:hover {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-.back-button:hover {
-    background-color: rgba(46, 204, 113, 0.4);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    transform: translateY(-3px);
-    color: #1e6947;
-}
 
 @media (max-width: 768px) {
     .container {
