@@ -50,13 +50,23 @@ body {
     font-style: italic;
 }
 .about-section {
-    margin: 0px 0;
-    padding: 20px;
-    background-color: #e8f8f5; /* Light blue-green */
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin: 30px 0;
+    padding: 25px 25px 35px 25px; /* Increased bottom padding */
+    background: linear-gradient(135deg, #EDF6F9 0%, #FFDDD2 100%);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     text-align: center;
-    border-left: 4px solid #3498db; /* Blue accent */
+    border-left: 5px solid #83C5BE;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-text {
+    flex: 1;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    padding: 10px 15px 15px 15px; /* Added padding all around the text */
+    margin-bottom: 10px; /* Added bottom margin */
 }
 .about-content {
     display: flex;
@@ -75,11 +85,7 @@ body {
     border: 3px solid #2ecc71; /* Bright green border */
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
-.about-text {
-    flex: 1;
-    text-align: center;
-    color: #2c3e50; /* Dark blue-gray text */
-}
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -117,20 +123,32 @@ body {
 .social-icons-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 20px;
+    gap: 1.5rem;
+    margin-top: 25px;
 }
+
+.social-icons-container .image-link {
+    box-shadow: none;
+    background: rgba(131, 197, 190, 0.1);
+    padding: 12px; /* Slightly increased padding */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons-container .image-link:hover {
+    background: rgba(131, 197, 190, 0.3);
+}
+
 .social-icons-container .image-link img,
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 40px; /* Increased from 30px */
+    height: 40px; /* Increased from 30px */
     border: none;
     transition: transform 0.3s ease;
-    filter: grayscale(100%) sepia(100%) hue-rotate(110deg); /* Gives icons a blue-green tint */
 }
+
 .social-icons-container .image-link:hover img {
     transform: scale(1.2);
-    filter: grayscale(0%); /* Remove the filter on hover to show original icon */
 }
 @media (max-width: 768px) {
     .about-content {
