@@ -66,6 +66,33 @@ body {
     padding: 10px 10px 5px 10px;
     margin-bottom: 10px;
 }
+
+.about-text ul {
+    display: inline-block;
+    text-align: left;
+    margin: 10px auto;
+    padding-left: 20px;
+    width: 80%; 
+}
+
+.about-text li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    position: relative;
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+.about-text li::before {
+    content: "•";
+    color: #00C49A; /* Bright teal */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
 .about-title {
     font-size: 1.5rem;
     margin-top: 0.5rem;
