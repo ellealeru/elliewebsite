@@ -84,8 +84,8 @@ body {
 .experience-item h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #172A3A; /* Dark blue-gray */
-    font-weight: normal;
+    color: #172A3A; 
+    font-weight: bold;
     font-size: 1.3rem;
 }
 
