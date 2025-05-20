@@ -10,9 +10,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #004346; /* Dark teal */
+    background-color: #004346; 
     padding: 20px;
-    color: #172A3A; /* Dark blue-gray */
+    color: #172A3A; 
     line-height: 1.5;
     margin: in0;
 }
@@ -20,9 +20,9 @@ body {
 .container {
     max-width: 800px;
     width: 100%;
-    background-color: #F7F7FF; /* Light background */
+    background-color: #F7F7FF; 
     padding: 20px;
-    border: 2px solid #00C49A; /* Bright teal accent */
+    border: 2px solid #00C49A; 
     position: relative;
     overflow: hidden;
 }
@@ -44,13 +44,13 @@ body {
     font-size: 2.5rem;
     text-align: center;
     margin: 10px 0;
-    color: #172A3A; /* Dark blue-gray */
+    color: #172A3A; 
     font-weight: normal;
 }
 
 .small-subtitle {
     font-size: 1.1rem;
-    color: #004346; /* Dark teal */
+    color: #004346; 
     margin: 10px 0;
     text-align: center;
     font-style: italic;
@@ -64,8 +64,8 @@ body {
 .interest-item {
     margin-bottom: 20px;
     padding: 15px;
-    background: rgba(0, 196, 154, 0.1); /* Light teal background */
-    border: 1px solid #00C49A; /* Bright teal */
+    background: rgba(0, 196, 154, 0.1); 
+    border: 1px solid #00C49A; 
 }
 
 .interest-item:last-child {
@@ -74,7 +74,7 @@ body {
 
 .interest-item h3 {
     margin-top: 0;
-    color: #172A3A; /* Dark blue-gray */
+    color: #172A3A; 
     font-weight: normal;
     font-size: 1.3rem;
     margin-bottom: 10px;
@@ -103,18 +103,18 @@ figure {
 img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #00C49A; /* Bright teal */
+    border: 1px solid #00C49A; 
 }
 
 figcaption {
     margin-top: 5px;
     font-style: italic;
-    color: #004346; /* Dark teal */
+    color: #004346; 
     font-size: 0.9rem;
 }
 
 a {
-    color: #00C49A; /* Bright teal */
+    color: #00C49A; 
     text-decoration: underline;
 }
 
@@ -134,8 +134,8 @@ a:hover {
 .back-button {
     display: inline-block;
     padding: 5px 10px;
-    background-color: rgba(0, 196, 154, 0.1); /* Light teal background */
-    color: #00C49A; /* Bright teal */
+    background-color: rgba(0, 196, 154, 0.1); 
+    color: #00C49A; 
     text-decoration: underline;
     border: 1px solid #00C49A;
     font-size: 0.95rem;
